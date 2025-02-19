@@ -4,27 +4,30 @@
 
 using namespace std;
 
+
 int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
     //Переменные
-    float x, z, t, y, e = exp(1.0);;
+    float m, b, t, c, z;
 
     //Ввод переменных с клавиатуры
-    cout << "Введите число X: ";
-    cin >> x;
-    cout << "Введите число Z: ";
-    cin >> z;
+    cout << "Введите число M: ";
+    cin >> m;
+    cout << "Введите число C: ";
+    cin >> c;
     cout << "Введите число T: ";
     cin >> t;
+    cout << "Введите число B: ";
+    cin >> b;
 
     //Формула
-    y = fabs(pow(x, 3.0) - 10.0) * (atan(z+0.2) + pow(e, -(x / 2.0 + 3.0)));
+    z = sqrt(m) * cos(pow(b, 3.0) + sin(t - 1.0)) + fabs(c);
 
     //Вывод результата
-    cout << "\nРезультат: " << y;
-    
+    cout << "\nРезультат: " << z;
+
     return 0;
 }
